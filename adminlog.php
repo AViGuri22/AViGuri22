@@ -150,7 +150,7 @@ $password=$_POST['password'];
 $sql="Select * from admin where Username='$_POST[username]' AND Password='$_POST[password]'";
 $result=mysqli_query($conn,$sql);
 
-if(mysqli_num_rows($result)>0)
+if(mysqli_num_rows($result)>1)
 {
 	echo"<script>alert('login');</script>";
 }
