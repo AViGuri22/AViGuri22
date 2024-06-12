@@ -152,7 +152,7 @@ $result=mysqli_query($conn,$sql);
 
 if(mysqli_num_rows($result)>0)
 {
-	echo"<script>window.location('mbookf1.php');</script>";
+	echo"<script>alert('login');</script>";
 }
 else{
 	echo"<script>alert('incorrect password');</script>";
